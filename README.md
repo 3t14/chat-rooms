@@ -1,7 +1,7 @@
 # chat-rooms
 
 ## 設定方法
-config.default.jsonファイルをconfig.jsonにリネームした上で、Firebaseの認証情報を記述してください。
+src/config.default.jsonファイルをconfig.jsonにリネームした上で、Firebaseの認証情報を記述してください。
 
 ## Project setup
 ```
