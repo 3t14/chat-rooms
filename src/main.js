@@ -8,11 +8,9 @@ import firebase from 'firebase'
 import 'firebase/firestore'
 import 'firebase/auth'
 
-firebase.initializeApp({
-  apiKey: 'AIzaSyCCDuAMj-TNA6abpu-TwfLYGgSVFxulrSw',
-  authDomain: 'chat-rooms-dee41.firebaseapp.com',
-  projectId: 'chat-rooms-dee41'
-});
+import config from './config.json'
+
+firebase.initializeApp(config);
 Vue.prototype.$db = firebase.firestore();
 Vue.prototype.$auth = firebase.auth();
 Vue.prototype.$firebase = firebase;
